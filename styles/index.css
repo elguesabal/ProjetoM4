@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
 .ionicon {
-    text-decoration: none;
+   text-decoration: none;
 }
 
 /* .accordion {
@@ -12,164 +12,192 @@
 } */
 
 .Margem {
-    margin: 200px;
+   margin: 200px;
 }
 
-header{
-    width: 100%;
+header {
+   width: 100%;
+
 }
 
 body {
-    background-image: url(https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg);
-    background-attachment: fixed;
-    background-size: 100%;
+   background-image: url(https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg);
+   background-attachment: fixed;
+   background-size: 100%;
 }
 
 .navbar {
-    background-color: rgba(129, 129, 129, 0.468);
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-
+   background-color: rgba(129, 129, 129, 0.468);
+   top: 0;
+   height: 100%;
+   width: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: fixed;
 }
 
 .modelografico {
-    padding-top: 200px;
+   padding-top: 200px;
 }
 
-.tamicon{
-    width: 50px;
-    height: 50px;
-    color: rgb(63, 131, 234);
+.tamicon {
+   width: 50px;
+   height: 50px;
+   color: rgb(63, 131, 234);
 }
 
-.titulo{
-    color: rgb(63, 131, 234);
-    padding-bottom: 20px;
-    text-decoration: underline 2px rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px #01154d
-
+.titulo {
+   color: rgb(63, 131, 234);
+   padding-bottom: 20px;
+   text-decoration: underline 2px rgb(255, 255, 255);
+   text-shadow: rgb(3, 3, 255) 1px 0 10px;
 }
 
-.ladoalado{
-    display: flex;
+.ladoalado {
+   display: flex;
 }
-.icone2{
-    width: 50px;
-    height: 50px;
-    color: rgb(63, 131, 234);
-    padding-right: 5px;
+
+.icone2 {
+   width: 50px;
+   height: 50px;
+   color: rgb(63, 131, 234);
+   padding-right: 5px;
 }
 
 .container {
-    position: relative;
-    width: 1280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
- }
+   position: relative;
+   width: 120%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
 
- .container .cards {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
-    margin: 10px;
-    border-radius: 20px;
-    overflow: hidden;
- }
+.container .cards {
+   position: relative;
+   width: 300px;
+   height: 400px;
+   background: linear-gradient(#2196f3, #2196f3 30%, #1d3548 30%, #1d3548);
+   margin: 10px;
+   border-radius: 20px;
+   overflow: hidden;
+}
 
- .container .cards .imgBx {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    z-index: 100000000;
-    border-radius: 20px;
-    overflow: hidden;
-    transform-origin: top;
- }
+.container .cards .imgBx {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transition: 0.5s;
+   z-index: 100000000;
+   border-radius: 20px;
+   overflow: hidden;
+   transform-origin: top;
+}
 
- .container .cards:hover .imgBx {
-    transform: translateY(30px) scale(0.5);
- }
+.container .cards:hover .imgBx {
+   transform: translateY(30px) scale(0.5);
+}
 
- .container .cards .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
- }
+.container .cards .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
- .container .cards .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 30px;
-    transform: translateY(100%);
-    transition: 0.5;
- }
+.container .cards .content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   padding-bottom: 30px;
+   transform: translateY(100%);
+   transition: 0.5;
+}
 
- .container .cards:hover .content {
-    transform: translateY(0);
- }
+.container .cards:hover .content {
+   transform: translateY(0);
+}
 
- .container .cards .content .details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
- }
+.container .cards .content .details {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
 
- .container .cards .content .details h2 {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 500;
- }
+.container .cards .content .details h2 {
+   color: #fff;
+   font-size: 1.5em;
+   font-weight: 500;
+}
 
- .container .cards .content .details h2 span {
-    font-size: 0.8em;
-    font-weight: 400;
-    color: #03a9f4;
- }
+.container .cards .content .details h2 span {
+   font-size: 0.8em;
+   font-weight: 400;
+   color: #03a9f4;
+}
 
- .social_icons {
-    position: relative;
-    display: flex;
-    margin-top: 5px;
- }
+.social_icons {
+   position: relative;
+   display: flex;
+   margin-top: 5px;
+}
 
- .social_icons li {
-    list-style: none;
-    margin: 4px;
- }
+.social_icons li {
+   list-style: none;
+   margin: 4px;
+}
 
- .social_icons li a {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #294d69;
-    border-radius: 50%;
-    font-size: 1.5em;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.5s;
- }
+.social_icons li a {
+   width: 45px;
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #294d69;
+   border-radius: 50%;
+   font-size: 1.5em;
+   color: #fff;
+   text-decoration: none;
+   transition: 0.5s;
+}
 
- .social_icons li a:hover {
-    transform: rotate(360deg);
-    background: #03a9f4;
- }
+.social_icons li a:hover {
+   transform: rotate(360deg);
+   background: #03a9f4;
+}
+
+.cardSteam {
+   width: 100%;
+   cursor: pointer;
+}
+
+.accordion-item {
+   background: linear-gradient(#0D324D, #732c7c);
+}
+
+.accordion-button {
+   background: #082dcf5d;
+   color: white;
+}
+
+#apresentacao {
+   display: none;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.459);
+}
